@@ -1,0 +1,7 @@
+{
+  "extends": "../tsconfig.eslint.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "outDir": "../release/esm"
+  }
+}

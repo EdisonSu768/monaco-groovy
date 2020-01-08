@@ -1,0 +1,10 @@
+{
+  "extends": ["@1stg/tslint-config/eslint"],
+  "rules": {
+    "parameters-max-number": false,
+    "max-union-size": false
+  },
+  "linterOptions": {
+    "exclude": ["node_modules/**"]
+  }
+}

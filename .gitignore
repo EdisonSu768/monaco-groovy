@@ -7,3 +7,4 @@ node_modules/
 release/
 # IDE generated files #
 .idea
+.*cache
