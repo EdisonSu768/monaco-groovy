@@ -14,7 +14,7 @@
   "devDependencies": {
     "@1stg/app-config": "^0.1.17",
     "@1stg/tslint-config": "^0.5.7",
-    "monaco-editor-core": "0.15.5",
+    "monaco-editor-core": "0.19.0",
     "monaco-languages": "1.6.0",
     "monaco-plugin-helpers": "^1.0.2",
     "typescript": "^3.7.4"
