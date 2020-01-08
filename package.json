@@ -1,0 +1,40 @@
+{
+  "name": "monaco-groovy",
+  "version": "1.0.0",
+  "description": "Groovy plugin for the Monaco Editor",
+  "repository": "git@github.com:EdisonSu768/monaco-groovy.git",
+  "author": "zgsu <zgsu@alauda.io>",
+  "license": "MIT",
+  "scripts": {
+    "compile": "mrmdir ./release && yarn compile:amd && yarn compile:esm",
+    "compile:amd": "tsc -p ./src/tsconfig.json",
+    "compile:esm": "tsc -p ./src/tsconfig.esm.json",
+    "watch": "tsc -p ./src --watch"
+  },
+  "devDependencies": {
+    "@1stg/app-config": "^0.1.17",
+    "@1stg/tslint-config": "^0.5.7",
+    "monaco-editor-core": "0.15.5",
+    "monaco-languages": "1.6.0",
+    "monaco-plugin-helpers": "^1.0.2",
+    "typescript": "^3.7.4"
+  },
+  "resolutions": {
+    "eslint-plugin-prettier": "^3.1.1",
+    "typescript": "~3.5.3"
+  },
+  "commitlint": {
+    "extends": [
+      "@1stg"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "@1stg/eslint-config/loose"
+  },
+  "prettier": "@1stg/prettier-config/semi/angular",
+  "remarkConfig": {
+    "plugins": [
+      "@1stg/remark-config"
+    ]
+  }
+}
