@@ -5,8 +5,7 @@
 'use strict';
 
 // Allow for running under nodejs/requirejs in tests
-const _monaco: typeof monaco =
-  typeof monaco === 'undefined' ? (self as any).monaco : monaco;
+import * as _monaco from 'monaco-editor/esm/vs/editor/editor.api.js';
 
 interface ILang extends monaco.languages.ILanguageExtensionPoint {
   loader: () => Promise<ILangImpl>;
